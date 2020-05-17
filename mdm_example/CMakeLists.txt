@@ -19,7 +19,7 @@ catkin_package(
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_executable(demo_predicates src/demo_predicates.cpp)
-
+add_dependencies(demo_predicates ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(demo_predicates ${catkin_LIBRARIES})
 
 add_executable(demo_state_layer src/demo_state_layer.cpp)
