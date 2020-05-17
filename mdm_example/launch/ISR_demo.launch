@@ -42,5 +42,5 @@
     </group>
 
     <node pkg="rostopic" type="rostopic" name="rostopic_pub"        
-      args="pub -1 /agent/100/initialpose geometry_msgs/PoseWithCovarianceStamped '{pose: {pose: {position: {x: -10, y: -7.5, z: 0}, orientation: { w: 0.7071, z: 0.7071, x: 0, y: 0 } } } }'" respawn="false"/>
+      args="pub -1 /agent/100/initialpose geometry_msgs/PoseWithCovarianceStamped '{pose: {pose: {position: {x: -10, y: -7.5, z: 0}, orientation: { w: 0.7071, z: 0.7071, x: 0, y: 0 } } } }'"/>
 </launch>
